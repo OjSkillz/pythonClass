@@ -1,0 +1,7 @@
+2.2 
+
+rating = input('Enter an integer rating between 1 and 10')
+
+If the code above is expected to read an integer into the variable rating, then the function input should have been cast with the function data type int as in:
+
+rating = int(input('Enter an integer rating between 1 and 10'))
