@@ -3,7 +3,7 @@ import functionmergeinputsalternatingly
 
 class TestFunctionMergeInputs(TestCase):
     def test_that_function_merge_inputs_exists(self):
-        functionmergeinputsalternatingly.merge_inputs_alternatingly([3,4,9,10],[1,5,7,8])
+        functionmergeinputsalternatingly.merge_inputs_alternatingly(["a","b","c"],["1","2","3"])
     
     def test_that_function_merge_inputs_returns_correct_value(self):
         self.assertEqual(functionmergeinputsalternatingly.merge_inputs_alternatingly(["a","b","c"],["1","2","3"]), ["a","1","b","2","c","3"])
