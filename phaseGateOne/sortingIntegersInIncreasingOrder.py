@@ -1,10 +1,13 @@
 """ Pseudocode for sorting integers in increasing order
+initialize an index counter
+Create an empty list "numbers" to store user input
+Create another empty list "sorted_list" to store sorted user input
 
 Prompt user to enter three integers
-Store the three numbers in an empty list
+Store the three numbers in "numbers"
 Sort the three numbers in increasing order
+Add all the elements in "numbers" to "sorted_list"
 Display the elements of the sorted list in increasing order
-
 """
 index = 0
 numbers = []
