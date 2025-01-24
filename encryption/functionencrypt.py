@@ -17,12 +17,14 @@
 
 def encrypt_text(string):
     characters = []
-
-    for char in string:
-        if char.isalpha():
-             characters.append(chr(get_encrypt_value(char)))
-        else:
-            characters.append(char)
+    try :
+        for char in string:
+            if char.isalpha():
+                characters.append(chr(get_encrypt_value(char)))
+            else:
+                characters.append(char)
+    except TypeError:
+        print("object is not a string")
 
     return "".join(characters)
 

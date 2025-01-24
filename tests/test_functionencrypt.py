@@ -14,5 +14,9 @@ class TestFunctionEncrypt(unittest.TestCase):
         expected = "Jrypbzr, 123"
         self.assertEqual(actual, expected)
 
+    def test_that_function_encrypt_raises_exception_with_integer_input(self):
+        actual = functionencrypt.encrypt_text(1)
+        self.assertRaises(TypeError, actual)
+
     if __name__ == '__main__':
         unittest.main()
