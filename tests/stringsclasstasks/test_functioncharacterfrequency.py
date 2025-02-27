@@ -1,5 +1,5 @@
 import unittest
-import classWorks.functioncharacterfrequency as cf
+import classWorks.stringsclasstasks.functioncharacterfrequency as cf
 
 class TestFunctionCharacterFrequency(unittest.TestCase):
     def test_that_function_exists(self):

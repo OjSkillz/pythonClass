@@ -1,5 +1,5 @@
 import unittest
-import classWorks.functionmergeandswapstrings as fms
+import classWorks.stringsclasstasks.functionmergeandswapstrings as fms
 
 class TestFunctionMergeAndSwapStrings(unittest.TestCase):
     def test_that_function_exists(self):
@@ -10,6 +10,8 @@ class TestFunctionMergeAndSwapStrings(unittest.TestCase):
         expected = "xyc abz"
         self.assertEqual(actual, expected)
 
-
+        actual = fms.merge_and_swap("123", "456")
+        expected = "453 126"
+        self.assertEqual(actual, expected)
 if __name__ == '__main__':
     unittest.main()
